@@ -39,7 +39,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "xx.yy", //修改为服务端分配的域名
+            "address": "2.2.2.2", //修改为使用本应用的域名或自己服务端的 IP
             "port": 443,
             "users": [
               {
@@ -57,6 +57,7 @@
         },
         "security": "tls",
         "tlsSettings": {
+          "serverName": "xx.yy", //修改为使用本应用的域名。（仅 address 使用服务端的 IP 必须配置，否则可删除。）
           "alpn": ["h2"], //若服务端（含使用 CDN 流量中转的服务器）支持 HTTP/3 传输其值可改为 h3
           "fingerprint": "chrome" //模拟 TLS 指纹，可任一 chrome、firefox、safari、ios、edge、qq、random、randomized 选项配置。
         }
@@ -111,7 +112,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zh.xx.yy", //修改为服务端分配的 CDN 流量中转域名
+            "address": "2.2.2.2", //修改为使用本应用的 CDN 流量中转域名或自己服务端的 IP
             "port": 443,
             "users": [
               {
@@ -127,7 +128,7 @@
         "xhttpSettings": {
           "path": "/VLSpdG9k", //修改为服务端配置的路径
           "downloadSettings": {
-            "address": "h3.xx.yy", //修改为服务端分配的直连域名
+            "address": "2.2.2.2", //修改为使用本应用的直连域名或自己服务端的 IP
             "port": 443,
             "network": "xhttp",
             "xhttpSettings": {
@@ -135,6 +136,7 @@
             },
             "security": "tls",
             "tlsSettings": {
+              "serverName": "h3.xx.yy", //修改为使用本应用的直连域名。（仅 address 使用服务端的 IP 必须配置，否则可删除。）
               "alpn": ["h2"], //若服务端（非 CDN 流量中转服务器）支持 HTTP/3 传输其值可改为 h3
               "fingerprint": "chrome" //模拟 TLS 指纹，可任一 chrome、firefox、safari、ios、edge、qq、random、randomized 选项配置。
             }
@@ -142,6 +144,7 @@
         },
         "security": "tls",
         "tlsSettings": {
+          "serverName": "zh.xx.yy", //修改为使用本应用的 CDN 流量中转域名。（仅 address 使用服务端的 IP 必须配置，否则可删除。）
           "alpn": ["h2"], //若 CDN 流量中转服务器支持 HTTP/3 传输其值可改为 h3
           "fingerprint": "chrome" //模拟 TLS 指纹，可任一 chrome、firefox、safari、ios、edge、qq、random、randomized 选项配置。
         }

@@ -38,7 +38,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "z1.xx.yy", //修改为服务端分配的域名
+            "address": "xx.yy", //修改为使用本应用的域名
             "port": 443,
             "users": [
               {
@@ -52,7 +52,7 @@
       "streamSettings": {
         "network": "http",
         "httpSettings": {
-          "host": ["z1.xx.yy"], //仅服务端有此项才配置，否则删除。域名与上一致。
+          "host": ["xx.yy"], //仅服务端有此项才配置，否则删除。域名与上一致。
           "path": "/SeuW56Es" //修改为服务端配置的路径
         },
         "security": "tls",

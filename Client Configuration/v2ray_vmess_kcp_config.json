@@ -38,7 +38,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "xx.yy", //修改为服务端的 IP 或分配的域名
+            "address": "2.2.2.2", //修改为使用本应用的域名或自己服务端的 IP
             "port": 2052,
             "users": [
               {

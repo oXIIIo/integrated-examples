@@ -38,7 +38,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "2.2.2.2", //修改为服务端的 IP
+            "address": "2.2.2.2", //修改为使用本应用的域名或自己服务端的 IP
             "port": 443,
             "users": [
               {
@@ -53,11 +53,11 @@
         "network": "xhttp",
         "security": "reality",
         "realitySettings": {
-          "fingerprint": "chrome", //模拟 TLS 指纹，可任一 chrome、firefox、safari、ios、edge、qq、random、randomized 选项配置。
-          "serverName": "xx.yy", //修改为服务端配置的域名
+          "serverName": "xx.yy", //修改为使用本应用的域名
           "publicKey": "SU8ZzrdS1DETJj0y3u4xFkPTCcf6HwJCBbbjWCoMMHw", //修改为服务端私钥的对应公钥
           "shortId": "", //修改为服务端 shortIds 配置之一
-          "spiderX": "" //选填，爬虫初始路径与参数，建议每个客户端不同。
+          "spiderX": "", //选填，爬虫初始路径与参数，建议每个客户端不同。
+          "fingerprint": "chrome" //模拟 TLS 指纹，可任一 chrome、firefox、safari、ios、edge、qq、random、randomized 选项配置。
         }
       }
     },
