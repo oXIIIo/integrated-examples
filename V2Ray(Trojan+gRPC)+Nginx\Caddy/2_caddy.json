@@ -50,11 +50,11 @@
                 "dial": "unix/@uds2010.sock" //转发给本机 Trojan+gRPC 监听进程
               }],
               "headers": {
-              	"request": {
+                "request": {
                   "set": {
                     "X-Real-IP": ["{http.vars.client_ip}"]
                   }
-              	}
+                }
               }
             }]
           },
