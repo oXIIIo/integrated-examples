@@ -50,11 +50,11 @@
                 "dial": "unix/@uds2013.sock" //转发给本机 VLESS+gRPC 监听进程
               }],
               "headers": {
-              	"request": {
+                "request": {
                   "set": {
                     "X-Real-IP": ["{http.vars.client_ip}"]
                   }
-              	}
+                }
               }
             }]
           },
