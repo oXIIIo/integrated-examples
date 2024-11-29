@@ -50,11 +50,11 @@
                 "dial": "127.0.0.1:2009" //转发给本机 VMess+gRPC 监听端口
               }],
               "headers": {
-              	"request": {
+                "request": {
                   "set": {
                     "X-Real-IP": ["{http.vars.client_ip}"]
                   }
-              	}
+                }
               }
             }]
           },
