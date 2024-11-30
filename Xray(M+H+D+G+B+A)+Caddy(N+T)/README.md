@@ -20,7 +20,7 @@ Xray 前置（监听 443 端口），利用 VLESS+Vision+REALITY 支持转发给
 
 注意：
 
-1、Caddy 加 caddy-l4 插件定制编译才可以实现定向转发 UDP。
+1、Caddy 加 caddy-l4 插件定制编译才可以实现定向 UDP 转发。
 
 2、Xray 的监听地址不支持 Shadowsocks 协议使用 UDS 监听。
 

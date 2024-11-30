@@ -45,7 +45,7 @@
           }]
         }
       }
-    }, //定向转发 UDP 配置
+    }, //定向 UDP 转发配置
     "http": {
       "servers": {
         "srvh1": {
@@ -85,7 +85,8 @@
               },
               "upstreams": [{
                 "dial": "127.0.0.1:2023" //转发给本机 VLESS+XHTTP 监听端口
-              }]
+              }],
+              "flush_interval": -1
             }]
           },
           {
@@ -118,11 +119,11 @@
                 "dial": "127.0.0.1:2011" //转发给本机 Shadowsocks+gRPC 监听端口
               }],
               "headers": {
-              	"request": {
+                "request": {
                   "set": {
                     "X-Real-IP": ["{http.vars.client_ip}"]
                   }
-              	}
+                }
               }
             }]
           },
