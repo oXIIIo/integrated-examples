@@ -16,7 +16,7 @@
 
 注意：
 
-1、Nginx 支持 SNI 分流需要 Nginx 包含 stream_core_module 和 stream_ssl_preread_module 模块构建。
+1、Nginx 支持 SNI 分流及定向 UDP 转发需要 Nginx 包含 stream_core_module 和 stream_ssl_preread_module 模块构建。
 
 2、Xray 的监听地址不支持 Shadowsocks 协议使用 UDS 监听。
 
